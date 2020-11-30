@@ -19,6 +19,7 @@ Add the last command to the .profile, .bashrc or .zshrc file to not run it again
 echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.profile
 echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bashrc
 echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
+echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bash_profile
 ```
 To see what Node versions are available to install run:
 ```
