@@ -1,4 +1,5 @@
-### Dev Setup in Mac
+### Dev Setup in my Mac
+### OS : BigSur
 
 #### Installing Homebrew
 
