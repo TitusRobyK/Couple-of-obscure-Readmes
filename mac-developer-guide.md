@@ -1,13 +1,13 @@
-### Dev Setup in my Mac
+## Dev Setup in my Mac
 ### OS : BigSur
 
-#### Installing Homebrew
+### Installing Homebrew
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-#### Installing nvm using homebrew
+### Installing nvm using homebrew
 ```
 brew update
 brew install nvm
@@ -40,7 +40,7 @@ to use Node version 11.
 Switching back to, let’s say, version 12 would be as easy as ```nvm use 12.```
 
 
-### Installing Java8
+### Installing Java 8
 
 Navigate to [Oracle Site](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) where all OS versions of Java JDK is present.
 
@@ -73,3 +73,5 @@ $ source ~/.bash_profile
 Verify the Java version by running ``` java -version```
 
 Side Note : JRE is a part of JDK. You need not have to install JRE when you have JDK. If you open JDK folder, you'll have JRE folder inside it.
+
+### Installing AEM
