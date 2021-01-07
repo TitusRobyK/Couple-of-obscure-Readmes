@@ -75,4 +75,39 @@ Verify the Java version by running ``` java -version```
 
 Side Note : JRE is a part of JDK. You need not have to install JRE when you have JDK. If you open JDK folder, you'll have JRE folder inside it.
 
+### Switching between Java Versions
+
+Navigate to [Oracle Site](https://www.oracle.com/java/technologies/javase/) where all OS versions of Java JDK is present.
+
+Choose macOS x64 version and the java version (In our case lets choose Java11)
+
+Install the same in mac
+
+#### Switching versions
+
+Add the following aliases to .bash_profile.
+```
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+
+# default to Java 11
+java11
+
+```
+Reload .bash_profile for the aliases to take effect.
+```
+$ source ~/.bash_profile
+```
+Use the alias to change version.
+```
+$ java8
+$ java -version
+java version "1.8.0_162"
+Java(TM) SE Runtime Environment (build 1.8.0_162-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.162-b12, mixed mode)
+```
+
 ### Installing AEM
