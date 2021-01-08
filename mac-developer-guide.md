@@ -1,5 +1,5 @@
 ## Dev Setup in my Mac
-### OS : BigSur
+### OS : Catalina
 
 ### Installing Homebrew
 
@@ -110,4 +110,35 @@ Java(TM) SE Runtime Environment (build 1.8.0_162-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.162-b12, mixed mode)
 ```
 
-### Installing AEM
+### Installing AEM Instance in you Mac
+
+Obtain the AEM Jar file as well as license file from your company of occupation or from Adobe.
+
+Place it inside a folder, rename the Jar file as aem-author-p4502.jar.
+
+Double-click the aem-author-p4502.jar file to install the Author instance. This will start the author instance, running on port 4502 on the local computer.
+
+If this doesnt pan out create a script with following command
+
+```
+java -jar aem-author-p4502.jar
+```
+This will start the author instance, running on port 4502 on the local computer.
+
+You might have to run the script everytime to start the local instance.
+
+### Installing IntelliJ and integrating with local AEM instance
+
+Install [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/) (This would allow to downgrade your intelliJ if thirdparty plugins are failing)
+
+Install IntelliJ Community Edition from the Jetbrains Toolbox
+
+Now download vault cli from [https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/] (https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/) (Recently from AEM6.4 or 6.5, vault cli is not present in /crx-quickstart/opt path bydefault. Post installation , note down the path to where it was unzipped 
+
+Open IntelliJ , click command + , to open preference , Navigate to plugins consequently search and download IntelliVault, Post installation, IntelliJ has to be restarted for the plugin to work. 
+
+Post restarting, click command + , to open preference , Navigate to Tools , Click IntelliVault , now configure the Vault directory as follows
+```
+/Users/../../folder/vault-cli-3.4.6
+```
+Click Ok , Now you are good to go.
