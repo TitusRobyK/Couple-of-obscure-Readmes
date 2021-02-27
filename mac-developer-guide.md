@@ -123,6 +123,10 @@ If this doesnt pan out create a script with following command
 ```
 java -jar aem-author-p4502.jar
 ```
+or
+```
+java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.5.0.jar
+```
 This will start the author instance, running on port 4502 on the local computer.
 
 You might have to run the script everytime to start the local instance.
