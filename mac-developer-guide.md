@@ -1,5 +1,5 @@
 ## Dev Setup in my Mac
-### OS : Catalina
+### OS : Mac Silicon
 
 ### Installing Homebrew
 
@@ -125,9 +125,17 @@ java -jar aem-author-p4502.jar
 ```
 or
 ```
-java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.5.0.jar
+java -XX:MaxPermSize=256m -Xmx1024M -jar aem-author-p4502.jar
 ```
 This will start the author instance, running on port 4502 on the local computer.
+Here is a breakdown of the command:
+* "java" is the command used to execute Java programs on the command line.
+* "-XX:MaxPermSize=256m" is a Java Virtual Machine (JVM) option that sets the maximum size of the permanent generation memory, which is used to store metadata about Java classes      and methods. In this case, it is set to 256 megabytes.
+* "-Xmx1024M" is another JVM option that sets the maximum size of the heap memory, which is where Java objects are stored. In this case, it is set to 1024 megabytes.
+* "-jar" tells the Java runtime to run the specified JAR file.
+* "aem-author-p4502.jar" is the name of the JAR file that will be executed.
+
+In summary, this command runs the "aem-author-p4502.jar" Java program with a maximum permanent generation memory size of 256 megabytes and a maximum heap memory size of 1024      megabytes.
 
 You might have to run the script everytime to start the local instance.
 
